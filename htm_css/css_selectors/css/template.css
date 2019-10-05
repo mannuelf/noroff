@@ -1,0 +1,65 @@
+/* css variables */
+:root {
+    --color-blue: rgba(36, 110, 185, 1);
+    --color-green: rgba(76, 185, 68, 1);
+    --color-white: rgba(253, 255, 252, 1);
+    --color-yellow: rgba(245, 238, 158, 1);
+    --color-red: rgba(240, 101, 67, 1);
+    --color-black: rgba(0, 16, 33, 1);;
+    --font-page-title: 'Bungee Shade', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-body-copy: Arial, Helvetica, sans-serif;
+    --font-size-large: 3em;
+    --template-width: 1170px;
+    --template-full-width: 100%;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+.layout-wrapper {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.layout-header {
+    grid-area: header;
+    margin: 0 auto;
+    width: var(--template-width);
+}
+
+.layout-main {
+    grid-area: main;
+    width: var(--template-full-width);
+    background-color: aqua;
+}
+
+.layout-footer {
+    grid-area: footer;
+    width: var(--template-full-width);
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: var(--font-page-title);
+    font-size: var(--font-size-large);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+p {
+    font-family:  var(--font-body-copy);
+    color: var(--color-white);
+}
+
+.color-white {
+    color: var(--color-white);
+}
