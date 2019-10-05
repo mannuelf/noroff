@@ -1,65 +1,241 @@
-/* css variables */
-:root {
-    --color-blue: rgba(36, 110, 185, 1);
+/*
+ * CSS Variables -------------------------- */
+
+ :root {
+    --color-blue: rgb(105, 195, 255);
     --color-green: rgba(76, 185, 68, 1);
     --color-white: rgba(253, 255, 252, 1);
     --color-yellow: rgba(245, 238, 158, 1);
     --color-red: rgba(240, 101, 67, 1);
-    --color-black: rgba(0, 16, 33, 1);;
+    --color-black: rgba(0, 16, 33, 1);
     --font-page-title: 'Bungee Shade', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    --font-body-copy: Arial, Helvetica, sans-serif;
+    --font-body-copy: 'Ubuntu', Arial, Helvetica, sans-serif;
+    --font-code: Hack;
     --font-size-large: 3em;
+    --font-size-medium: 2em;
+    --font-size-small: 1em;
     --template-width: 1170px;
     --template-full-width: 100%;
 }
 
-body {
-    background-color: var(--color-black);
+html {
+  font-family: var(--font-body-copy);
+  /* border-top: 10px solid var(--color-green); */
 }
 
+body {
+  background-color: var(--color-white);
+}
+
+/*
+ * Layout -------------------------- */
+
 .layout-wrapper {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-template-rows: auto;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
     "header header header header"
-    "main main . sidebar"
+    "main main main main"
     "footer footer footer footer";
+  justify-items: center;
+  padding: 2em;
 }
 
 .layout-header {
-    grid-area: header;
-    margin: 0 auto;
-    width: var(--template-width);
+  grid-area: header;
+  margin: 0 auto;
+  width: var(--template-full-width);
 }
 
 .layout-main {
-    grid-area: main;
-    width: var(--template-full-width);
-    background-color: aqua;
+  grid-area: main;
+  margin: 0 auto;
+  width: var(--template-full-width);
 }
 
 .layout-footer {
-    grid-area: footer;
-    width: var(--template-full-width);
-    background-color: aliceblue;
+  grid-area: footer;
+  margin: 2em auto;
+  width: var(--template-full-width);
 }
 
+
+.layout-btn-wall {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-white);
+}
+
+.ui-btn {
+  flex-grow: 1;
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  padding: 1em;
+  font-family: var(--font-page-title);
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--color-black);
+  transition: 0.3s;
+  line-height: 1;
+  text-align: center;
+}
+
+.ui-btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  transition: 0.3s;
+}
+
+
+/*
+ * Tablet and Desktop ----------------- */
+
+@media screen and (min-width: 768px) {
+  .layout-wrapper {
+    padding: 0em;
+  }
+
+  .layout-header,
+  .layout-main,
+  .layout-footer {
+    width: var(--template-width);
+  }
+  .ui-btn {
+    line-height: 10;
+  }
+}
+
+/*
+ * Bash Terminal thingy --------------- */
+
+.ui-bash-terminal {
+  position: relative;
+  width: auto;
+  padding: 2em;
+  background-color: var(--color-black);
+  border-radius: .8em;
+}
+
+.ui-bash-selector {
+  color: var(--color-blue);
+}
+
+.ui-bash-property {
+  color: var(--color-green);
+}
+
+.ui-bash-brackets {
+  color: var(--color-white);
+}
+
+.ui-bash-value {
+  color: var(--color-yellow);
+}
+
+.ui-bash-buttons {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 6em;
+  color: var(--color-white);
+}
+
+.ui-bash-buttons span {
+  display: block;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 32px;
+  height: 32px;
+}
+
+.ui-bash-buttons span:nth-child(1) {
+  color: var(--color-red);
+}
+
+.ui-bash-buttons span:nth-child(2) {
+  color: var(--color-yellow);
+}
+
+.ui-bash-buttons span:nth-child(3) {
+  color: var(--color-green);
+}
+
+.ui-bash-code {
+  font-family: var(--font-code);
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+/*
+ * Typography -------------------------- */
+
 h1 {
-    font-family: var(--font-page-title);
-    font-size: var(--font-size-large);
+  font-family: var(--font-page-title);
+  font-size: var(--font-size-large);
+}
+
+.layout-header h1 {
+  font-weight: inherit;
+}
+
+.layout-header h2 {
+  font-weight: 300;
 }
 
 a {
-    color: var(--color-white);
-    text-decoration: none;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  color: var(--color-green)
+}
+
+.layout-footer a {
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+.layout-footer a:hover {
+  color: var(--color-blue);
 }
 
 p {
-    font-family:  var(--font-body-copy);
-    color: var(--color-white);
+  font-family: var(--font-body-copy);
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.color-blue {
+  color: var(--color-blue);
+}
+
+.color-green {
+  color: var(--color-green);
 }
 
 .color-white {
-    color: var(--color-white);
+  color: var(--color-white);
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-black {
+  color: var(--color-black);
 }
