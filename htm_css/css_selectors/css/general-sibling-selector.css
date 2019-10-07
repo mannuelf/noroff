@@ -1,0 +1,10 @@
+
+/* ====================================================================
+  Targets any element that is sibling of another,
+  any p tag after the img element will be styled.
+  ===================================================================*/
+.ui-browser-chrome__window img ~ p {
+ color: #FF9900;
+ font-size: 1em;
+ font-weight: 300;
+}

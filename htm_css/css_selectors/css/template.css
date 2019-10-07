@@ -4,7 +4,7 @@
  :root {
     --color-blue: rgb(105, 195, 255);
     --color-green: rgba(76, 185, 68, 1);
-    --color-white: rgba(253, 255, 252, 1);
+    --color-white: rgba(255, 255, 255, 1);
     --color-light-grey: rgb(246, 246, 246);
     --color-yellow: rgba(245, 238, 158, 1);
     --color-red: rgba(240, 101, 67, 1);
@@ -124,6 +124,10 @@ body {
   border-radius: .8em;
 }
 
+.ui-bash-combinator {
+  color: var(--color-red);
+}
+
 .ui-bash-selector {
   color: var(--color-blue);
 }
@@ -177,6 +181,29 @@ body {
 }
 
 /*
+ * Browser chrome ----------------------- */
+
+.ui-browser-chrome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: var(--color-white);
+  border-radius: .5em;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.ui-browser-chrome__tab-bar {
+  background-color: var(--color-green);
+}
+
+.ui-browser-chrome__window {
+  background-color: var(--color-white);
+}
+
+/*
  * Typography -------------------------- */
 
 h1 {
@@ -213,7 +240,6 @@ a:hover {
 
 p {
   font-family: var(--font-body-copy);
-  color: var(--color-white);
   font-weight: 300;
 }
 
@@ -240,3 +266,8 @@ p {
 .color-black {
   color: var(--color-black);
 }
+
+.ui-browser-chrome ~ p {
+  color: red;
+  font-size: 1em;
+ }
