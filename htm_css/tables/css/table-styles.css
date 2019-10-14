@@ -23,6 +23,10 @@ td.results-table__country {
   text-align: left;
 }
 
+td.results-table__country img {
+  width: 26px;
+}
+
 td.results-table__country--no {
   background-color: greenyellow;
 }
