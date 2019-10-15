@@ -1,0 +1,46 @@
+ body {
+   font-family: 'Roboto', sans-serif;
+   color: #444;
+   font-size: 18px;
+ }
+
+.wrapper {
+  width: 90%;
+  max-width: 768px;
+  margin: 5% auto;
+  padding: 0px 0 40px 0;
+}
+
+.logo {
+  font-family: 'Fredoka One', cursive;
+  font-size: 80px;
+}
+.subscribe-form fieldset {
+ border: 10px dashed #EEE;
+ margin-bottom: 20px ;
+}
+
+.subscribe-form input[type="text"] {
+  border: 1px solid #CCC;
+  padding: 10px;
+}
+
+.subscribe-form legend {
+  background: aquamarine;
+  padding: 10px;
+}
+
+.subscribe-form__inputs {
+  margin-bottom: 10px;
+}
+
+.subscribe-form input[type="submit"] {
+  display: block;
+  width: auto;
+  background-color: #DF2935;
+  color: #FFF;
+  cursor: pointer;
+  padding: 20px;
+  float: right;
+  border: none;
+}

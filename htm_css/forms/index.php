@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+      <h1>
+        <span class="logo">Jukebox.io</span>
+        <br> your one stop music source.
+      </h1>
+      <p>Hottest recommendations engine this side of the interwebs!</p>
+
+      <form action="index.php" method="POST" class="subscribe-form">
+        <fieldset>
+          <legend>Your details</legend>
+          <div class="subscribe-form__inputs">
+            <label for="name">Name:</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="subscribe-form__inputs">
+            <label for="email">Email:</label>
+            <input type="text" name="email" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your favourite music genres are:</legend>
+          <div>
+            <input type="checkbox" name="genres" value="Pop">
+            <label for="pop">Pop</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genres" value="Rock">
+            <label for="rock">Rock</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genres" value="Electronic">
+            <label for="electronic">Electronic</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genres" value="Techno">
+            <label for="Techno">Techno</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genres" value="Disco">
+            <label for="disco">Disco</label>
+          </div>
+          <div>
+            <input type="checkbox" name="genres" value="Reggae">
+            <label for="reggae">Reggae</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where should we send your recommendations?</legend>
+          <div>
+            <input type="radio" name="preferredCommunication" value="email">
+            <label for="email">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="preferredCommunication" value="mobile">
+            <label for="mobile">Mobile</label>
+          </div>
+          <div>
+            <input type="radio" name="preferredCommunication" value="postcard">
+            <label for="postcard">Post card</label>
+          </div>
+        </fieldset >
+        <input type="submit" name="submit" value="Subscribe">
+      </form>
+    </div>
+</body>
+</html>
