@@ -41,6 +41,7 @@ body {
     "footer footer footer footer";
   justify-items: center;
   padding: 1em;
+  background: r;
 }
 
 .layout-header {
@@ -85,7 +86,7 @@ body {
   transition: 0.3s;
   line-height: 1;
   text-align: center;
-  background-color: var(--color-white);
+  tab-size: p;
 }
 
 .ui-btn:hover {

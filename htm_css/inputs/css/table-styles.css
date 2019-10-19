@@ -1,0 +1,40 @@
+.results-table {
+  background-color: #FFF;
+}
+
+.results-table__header {
+  background-color: #080708;
+  color: #FFF;
+}
+
+.results-table th {
+  text-align: center;
+  padding: 4px;
+}
+
+.results-table td,
+.results-table tr {
+  padding: 4px;
+  text-align: center;
+}
+
+th.results-table__country,
+td.results-table__country {
+  text-align: left;
+}
+
+td.results-table__country img {
+  width: 26px;
+}
+
+td.results-table__country--no {
+  background-color: greenyellow;
+}
+
+.results-table tr:nth-child(even) {
+  background-color: #E6E8E6;
+}
+
+.results-table tr:hover {
+  background-color: #FDCA40;
+}

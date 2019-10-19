@@ -1,0 +1,53 @@
+body {
+  background-image: url("../img/memphis-colorful.png"); /* https://www.toptal.com/designers/subtlepatterns/page/10/ */
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: "Open Sans";
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  border: 10px dotted #EEE;
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.header {
+  position: relative;
+}
+
+.main {
+  width: 100%;
+}
+
+.my-links {
+  border-bottom: 1px dotted #EEE;
+  padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: 'Fascinate Inline', cursive;
+}
+
+a:link {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+a:visited {
+  color: #444;
+}
+
+a:hover {
+  color: #FF9900;
+}
+
+.footer {
+  width: 100%;
+}
