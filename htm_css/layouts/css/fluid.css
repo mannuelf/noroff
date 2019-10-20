@@ -2,16 +2,17 @@ body {
   background-color: #F7FFF7;
   color: #F7FFF7;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 .wrapper {
-  width: 1280px;
-  margin: 0px auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
   background-color: #F7567C;
-  width: 1280px;
+  width: 100%;
   padding: 10px;
 }
 
@@ -23,7 +24,7 @@ header h1 {
 
 main {
   background-color: #4ECDC4;
-  width: 1280px;
+  width: 100%;
   padding: 10px;
 }
 
@@ -32,7 +33,7 @@ article {
   vertical-align: top;
   background-color: #1A535C;
   padding: 10px;
-  width: 860px;
+  width: 60%;
 }
 
 aside {
@@ -40,7 +41,7 @@ aside {
   vertical-align: top;
   background-color: #1A535C;
   padding: 10px;
-  width: 360px;
+  width: 30%;
 }
 
 aside nav a {
@@ -53,14 +54,14 @@ aside nav a {
 
 footer {
   background-color: #F7567C;
-  width: 1280px;
+  width: 100%;
   padding: 10px;
 }
 
 footer section {
   display: inline-block;
   vertical-align: top;
-  width: 300px;
+  width: 23%;
 }
 
 footer section a {
@@ -70,7 +71,7 @@ footer section a {
 }
 
 .banner-img {
-  width: 860px;
+  width: 100%;
 }
 
 .subscription-form {
