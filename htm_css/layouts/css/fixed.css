@@ -1,0 +1,50 @@
+body {
+  background-color: #F7FFF7;
+  color: #F7FFF7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 20px auto;
+}
+
+header {
+  background-color: #F7567C;
+  width: 1280px;
+  padding: 10px;
+}
+
+header h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+main {
+  background-color: #4ECDC4;
+  width: 1280px;
+  padding: 10px;
+}
+
+article {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #F7567C;
+  padding: 10px;
+  width: 860px;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #F7567C;
+  padding: 10px;
+  width: 360px;
+}
+
+footer {
+  background-color: #F7567C;
+  width: 1280px;
+  padding: 10px;
+}

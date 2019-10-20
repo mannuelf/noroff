@@ -1,0 +1,28 @@
+ body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #444;
+   font-size: 18px;
+ }
+
+.wrapper {
+  width: 90%;
+  max-width: 768px;
+  margin: 5% auto;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+table th, table td {
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: azure;
+  text-align: center;
+}
