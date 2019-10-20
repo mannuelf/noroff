@@ -69,6 +69,10 @@ footer section a {
   color: #F7FFF7;
 }
 
+.banner-img {
+  width: 860px;
+}
+
 .subscription-form input[type="text"] {
   border: none;
   padding: 10px;
