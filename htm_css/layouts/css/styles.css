@@ -1,4 +1,6 @@
 body {
+  background-image: url("../img/spiration-dark.png");
+  background-repeat: repeat;
   background-color: #F7FFF7;
   color: #F7FFF7;
   font-family: 'Open Sans', sans-serif;
@@ -23,7 +25,7 @@ header h1 {
 }
 
 main {
-  background-color: #4ECDC4;
+  background-color: rgba(78, 205, 197, 0.468);
   width: 100%;
   padding: 2em;
 }

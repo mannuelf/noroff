@@ -1,4 +1,10 @@
+*,::after,::before {
+  box-sizing: border-box
+}
+
 body {
+  background-image: url("../img/spiration-dark.png");
+  background-repeat: repeat;
   background-color: #F7FFF7;
   color: #F7FFF7;
   font-family: 'Open Sans', sans-serif;
@@ -23,25 +29,24 @@ header h1 {
 }
 
 main {
-  background-color: #4ECDC4;
+  background-color: rgba(78, 205, 197, 0.468);
   width: 100%;
   padding: 10px;
 }
 
 article {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   background-color: #1A535C;
   padding: 10px;
-  width: 60%;
+  width: 100%;
 }
 
 aside {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   background-color: #1A535C;
   padding: 10px;
-  width: 30%;
+  width: 100%;
+  margin-top: 20px;
 }
 
 aside nav a {
@@ -59,9 +64,8 @@ footer {
 }
 
 footer section {
-  display: inline-block;
-  vertical-align: top;
-  width: 23%;
+  display: block;
+  width: 90%;
 }
 
 footer section a {
@@ -89,4 +93,36 @@ footer section a {
   background-color: #4ECDC4;
   color: #F7FFF7;
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  article {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    margin-top: 0;
+  }
+
+  aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-top: 0;
+  }
+
+  footer section {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 1180px;
+  }
 }
