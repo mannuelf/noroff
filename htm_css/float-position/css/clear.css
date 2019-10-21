@@ -1,0 +1,9 @@
+.float {
+  margin: 10px;
+  float: right;
+  width: 300px;
+}
+
+.clear {
+  clear: right;
+}

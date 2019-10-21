@@ -1,0 +1,70 @@
+body {
+  background-image: url("../img/beanstalk.png"); /* https://www.toptal.com/designers/subtlepatterns/ */
+  background-repeat: repeat;
+  background-position: top left;
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.header {
+  position: relative;
+}
+
+.main {
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  clear: both;
+}
+
+.footer nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.my-links {
+  border-bottom: 1px dotted #EEE;
+  padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: 'VT323', monospace;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+a:link {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+a:visited {
+  color: #444;
+}
+
+a:hover {
+  color: #FF9900;
+}

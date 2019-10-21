@@ -1,0 +1,19 @@
+.float {
+  background: lightblue;
+  padding: 5px;
+  margin: 10px;
+}
+
+.floated-right {
+  float: right;
+}
+
+.floated-left {
+  float: left;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
