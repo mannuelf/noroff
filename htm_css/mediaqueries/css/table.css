@@ -1,0 +1,6 @@
+@media screen and (min-width: 640px) {
+  .banner {
+    min-height: 420px;
+    background-image: url("../img/banner-tablet.jpg");
+  }
+}

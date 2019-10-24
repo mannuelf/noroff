@@ -1,7 +1,11 @@
+*,::after,::before {
+  box-sizing: border-box
+}
+
 body {
-  background-image: url("../img/spiration-dark.png");
+  background-image: url("../img/skyscraper.png");
   background-repeat: repeat;
-  background-color: #444;
+  background-color: #EEE;
   color: #F7FFF7;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -13,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #247BA0;
+  background-color: #BBDBB4;
   width: 100%;
   padding: 10px;
 }
@@ -25,7 +29,7 @@ header h1 {
 }
 
 main {
-  background-color: rgba(36, 123, 160, 0.468);
+  background-color: rgba(78, 118, 205, 0.468);
   width: 100%;
   padding: 2em;
 }
@@ -33,10 +37,10 @@ main {
 article {
   display: inline-block;
   vertical-align: top;
-  background-color: #F7567C;
+  background-color: #D56AA0;
   padding: 10px;
-  width: 80%;
-  box-shadow: 10px 10px 0px #000;
+  width: 90%;
+  box-shadow: 10px 10px 0px #861657;
 }
 
 article a {
@@ -48,7 +52,7 @@ article a {
 }
 
 footer {
-  background-color: #247BA0;
+  background-color: #BBDBB4;
   width: 100%;
   padding: 10px;
 }
