@@ -12,9 +12,16 @@ body {
 }
 
 .wrapper {
+  /* set a flex container */
+  display: flex;
+  /* set a flex direction, to stack things on top of each other */
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+
   width: 100%;
   margin: 0 auto;
-  display: flex;
 }
 
 header {
@@ -36,14 +43,12 @@ main {
 }
 
 article {
-  display: block;
   background-color: #1A535C;
   padding: 10px;
   width: 100%;
 }
 
 aside {
-  display: block;
   background-color: #1A535C;
   padding: 10px;
   width: 100%;
@@ -102,22 +107,14 @@ footer section a {
   }
 
   article {
-    display: inline-block;
-    vertical-align: top;
-    width: 60%;
-    margin-top: 0;
+    flex: 1 2;
   }
 
   aside {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin-top: 0;
+    flex: 1 2;
   }
 
   footer section {
-    display: inline-block;
-    vertical-align: top;
     width: 23%;
   }
 }
@@ -127,3 +124,4 @@ footer section a {
     width: 1180px;
   }
 }
+
