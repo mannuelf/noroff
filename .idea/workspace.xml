@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76ccb0d6-3232-4a04-9b9b-4b48a3d8323b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/while_loops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htm_css/layouts/css/flexbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/htm_css/layouts/css/flexbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htm_css/layouts/flexbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/htm_css/layouts/flexbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/values.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572198772191</updated>
-      <workItem from="1572198773494" duration="1438000" />
+      <workItem from="1572198773494" duration="2964000" />
     </task>
     <servers />
   </component>
