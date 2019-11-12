@@ -11,15 +11,21 @@ functions
 undefined values
 ```
 
-## Numbers 
+JavaScript variables are untyped.
+
+## Numbers
 
 Numbers are what you think they are, numerical values. You have whole numbers and fractional numbers.
+
+- floating point values
+- 64 bit floating point values
+- numeric literal when it appears in a js programme.
 
 ```JavaScript
 const myNum = 100
 ```
 
-JavaScript uses 64 bits to hold a single number. Always treat fractional numbers as approximations. 
+JavaScript uses 64 bits to hold a single number. Always treat fractional numbers as approximations.
 This due to the limit of patterns JavaScript can make within the 64 bits.
 
 # Strings
@@ -30,7 +36,7 @@ Strings are text written within quotes. You can use single or double quotes, pic
 const myString = "Hello this is a string"
 ```
 
-You can put any string inside of the quotes. You can use the backslash to ESCAPE special characters 
+You can put any string inside of the quotes. You can use the backslash to ESCAPE special characters
 ```JavaScript
 const myString = "Hello this is a \"strings\" are amazing"
 ```
@@ -38,7 +44,7 @@ const myString = "Hello this is a \"strings\" are amazing"
 You cannot do arithmetic with strings but you can concatenate strings
 
 ```JavaScript
-const myString = "Hello this is a \"strings\" are amazing" + " I " + "Love JavaScript" 
+const myString = "Hello this is a \"strings\" are amazing" + " I " + "Love JavaScript"
 ```
 
 # Unary operators
@@ -67,7 +73,7 @@ console.log(typeof  myNumber);
 const add = function(a, b) {
     return a + b;
 };
-console.log(typeof add); 
+console.log(typeof add);
 // logs function
 ```
 
@@ -84,7 +90,7 @@ console.log(myNumber === mySecondNumber);
 
 # Comparisons
 
-If you want to check if something is truthy or falsy. 
+If you want to check if something is truthy or falsy.
 To produce a boolean value you must compare something with something else using a comparison operator.
 
 ```JavaScript
@@ -107,7 +113,7 @@ console.log(myNumber < mySecondNumber);
 ## Symbols
 
 ```
-> greater than 
+> greater than
 < less than
 == loose equality
 === strict equality
@@ -120,7 +126,7 @@ NaN is the result of a nonsensical computation
 
 # Logical operators
 
-JavaScript supports 3 logical operators, and, or and not. These operators can be used to reason about your booleans... 
+JavaScript supports 3 logical operators, and, or and not. These operators can be used to reason about your booleans...
 if something is true do this or that.
 
 ```
@@ -134,12 +140,12 @@ The && operator returns true only if both values given are true. This is binary 
 const age = 35;
 const ageLimit = 15;
 
-if (age > ageLimit && age !== ageLimit ) {       
+if (age > ageLimit && age !== ageLimit ) {
     console.log("Congratulations you may open a bank account")
     return true
 } else {
   console.log("You are too young open a bank account.")
-  return false 
+  return false
 }
 ```
 
@@ -149,12 +155,12 @@ The || operator produces true if either values given to it are true
 const age = 35;
 const ageLimit = 15;
 
-if (age < ageLimit || age <= ageLimit ) {       
+if (age < ageLimit || age <= ageLimit ) {
     console.log("You are too young open a bank account.")
     return false
 } else {
   console.log("Congratulations you may open a bank account")
-  return true 
+  return true
 }
 ```
 
@@ -167,6 +173,7 @@ The Not operator is written with an exclamation mark ! This operator can flip th
 ```
 
 # Ternary operator
+
 This operator operates on three values, using the quotation mark
 
 ```JavaScript
@@ -175,19 +182,21 @@ const ageLimit = 15;
 
 const isLegalAgeLimit = age > ageLimit ? true : false;
 
-if (isLegalAgeLimit) {       
+if (isLegalAgeLimit) {
     console.log("Congratulations you may open a bank account");
     return false
 } else {
   console.log("You are too young open a bank account.");
   return true
 }
-``` 
+```
 
 # Undefined values
+
 `null` and `undefined are what is returned when values are seen to have no value. However remember that null and undefined are values in of themselves, they can be used in an expression to check the absence of value
 
 # Automatic type conversion
+
 If an operator is applied to the "wrong" type of value JavaScript will silently convert it to the type that it wants. This is called type coercion
 
 ```JavaScript
@@ -196,9 +205,14 @@ const ageLimit = "15";
 
 const isLegalAgeLimit = age > ageLimit ? true : false;
 
-if (isLegalAgeLimit) {       
+if (isLegalAgeLimit) {
     console.log("Congratulations you may open a bank account");
 } else {
   console.log("You are too young open a bank account.");
 }
-``` 
+```
+# Primitive Types
+
+```JavaScript
+
+```
