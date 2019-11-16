@@ -1,5 +1,9 @@
 # Values, Types and Operators
 
+JavaScript is divided into two categories
+
+**Primitive types** and **object types**.
+
 In JavaScript you have six types of data.
 
 ```
