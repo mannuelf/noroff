@@ -1,5 +1,8 @@
 /*
- * Source: JavaScript the Definitive Guide. Insert Link
+ * Source
+ * JavaScript: The Definitive Guide, Sixth Edition
+ * by David Flanagan
+ * ISBN: 978-0-596-80552-4
  */
 
 let then = new Date(2010, 0, 1);
