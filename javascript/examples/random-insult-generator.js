@@ -8,9 +8,4 @@ var randomWord = randomWords[Math.floor(Math.random() * 4)];
 
 var randomInsult = "Your " + randomBodyPart + " is like a " + randomAdjective + " " + randomWord + "!!!";
 
-var pickRandomWord = function(words) {
-  return words[Math.floor(Math.random() * words.length)];
-}
-
-console.log(pickRandomWord(randomWords))
-// console.log(randomInsult);
+console.log(randomInsult);
