@@ -39,9 +39,9 @@ for (var i = 0; i < word.length; i++) {
   answerArray[i] = "_";
 }
 
+// Game code
 var remainingLetters = word.length;
 while (remainingLetters > 0) {
-  // Game code
   // Show player progress
   alert(answerArray.join(" "))
   // take input from player
